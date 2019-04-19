@@ -22,7 +22,7 @@ pod 'NNUtils'
 
 ## Author
 
-ChandlerNguyen, nang.nguyen@evizi.com
+Nang Nguyen
 
 ## License
 
