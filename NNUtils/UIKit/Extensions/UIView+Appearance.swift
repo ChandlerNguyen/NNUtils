@@ -3,7 +3,7 @@
 //  DevKit
 //
 //  Created by Nang Nguyen on 4/17/19.
-//  Copyright © 2019 Evizi. All rights reserved.
+
 //
 
 import UIKit
