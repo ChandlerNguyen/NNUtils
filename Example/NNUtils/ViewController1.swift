@@ -9,7 +9,7 @@
 import UIKit
 import NNUtils
 
-class ViewController1: UIViewController {
+class ViewController1: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

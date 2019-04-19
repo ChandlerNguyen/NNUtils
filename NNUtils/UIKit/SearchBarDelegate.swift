@@ -7,25 +7,25 @@
 
 import UIKit
 
-class SearchBarDelegate: NSObject, UISearchBarDelegate {
-    var searchBarIsActive = false
-    var textDidChange: ((String) -> ())?
+public class SearchBarDelegate: NSObject, UISearchBarDelegate {
+    public var searchBarIsActive = false
+    public var textDidChange: ((String) -> ())?
     
-    init(searchBar: UISearchBar) {
+    public init(searchBar: UISearchBar) {
         super.init()
         searchBar.delegate = self
     }
     
-    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+    public func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.setShowsCancelButton(true, animated: true)
         return true
     }
     
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+    public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBarIsActive = true
     }
     
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         searchBar.setShowsCancelButton(false, animated: true)
         searchBarIsActive = false
     }
@@ -43,7 +43,7 @@ class SearchBarDelegate: NSObject, UISearchBarDelegate {
         textDidChange?("")
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         textDidChange?(searchText)
     }
 }

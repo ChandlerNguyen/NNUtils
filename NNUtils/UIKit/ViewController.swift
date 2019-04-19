@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+open class ViewController: UIViewController {
     deinit {
         print("Dealloc class: \(self)")
     }

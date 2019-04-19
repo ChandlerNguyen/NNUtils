@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NNUtils
 
-class ViewController3: UIViewController {
+class ViewController3: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
