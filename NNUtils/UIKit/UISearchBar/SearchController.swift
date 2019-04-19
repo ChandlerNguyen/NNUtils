@@ -1,20 +1,24 @@
 //
-//  SearchBarDelegate.swift
+//  SearchController.swift
 //  DevKit
 //
-//  Created by Nang Nguyen on 3/5/19.
+//  Created by Nang Nguyen on 4/19/19.
 //
 
 import UIKit
 
-public class SearchBarDelegate: NSObject, UISearchBarDelegate {
-    public var searchBarIsActive = false
-    public var textDidChange: ((String) -> ())?
+
+public typealias SearchBarAction = (String) -> ()
+public class SearchController: NSObject, UISearchBarDelegate {
     
-    public init(searchBar: UISearchBar) {
-        super.init()
-        searchBar.delegate = self
+    public weak var searchBar: UISearchBar? {
+        didSet {
+            searchBar?.delegate = self
+        }
     }
+    
+    public var searchBarIsActive = false
+    public var textDidChange: SearchBarAction?
     
     public func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.setShowsCancelButton(true, animated: true)
