@@ -12,10 +12,12 @@ final class MainWindowFactory {
     static func make() -> UIWindow {
         
         let demoPageVC = DemoPageViewController()
-        let tabBarController = UITabBarControllerFactory.make(with: demoPageVC)
+        let vc1 = ViewController1()
+        let naviController = UINavigationControllerFactory.make(with: demoPageVC)
+        //let tabBarController = UITabBarControllerFactory.make(with: naviController)
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = tabBarController
+        window.rootViewController = naviController
         window.backgroundColor = UIColor.white
         window.makeKeyAndVisible()
         

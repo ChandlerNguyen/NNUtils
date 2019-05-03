@@ -18,19 +18,14 @@ class PageController: NSObject, UIPageViewControllerDelegate, UIPageViewControll
         }
     }
     
-    public var viewControllers: [UIViewController] = [] {
-        didSet {
-            pageViewController?.setViewControllers([viewControllers.first!],
-                                                   direction: UIPageViewController.NavigationDirection.forward,
-                                                   animated: false,
-                                                   completion: nil)
-        }
-    }
+    private var viewControllers: [UIViewController] = []
     
     public var didFinishTransition: PageControllerTransition?
     
     public func showPage(_ index: Int, animated: Bool) {
-        self.showViewController(self.viewControllers[index], animated: animated)
+        if (index >= 0 && index < self.viewControllers.count) {
+            self.showViewController(self.viewControllers[index], animated: animated)
+        }
     }
     
     public func showViewController(_ viewController: UIViewController, animated: Bool) {
@@ -44,6 +39,14 @@ class PageController: NSObject, UIPageViewControllerDelegate, UIPageViewControll
             self?.perform(#selector(self?.refresh), with: nil, afterDelay: 0.05)
         })
         
+    }
+    
+    public func setViewControllers(_ viewControllers: [UIViewController]) {
+        self.viewControllers = viewControllers
+        self.pageViewController?.setViewControllers([viewControllers.first!],
+                                                    direction: UIPageViewController.NavigationDirection.forward,
+                                                    animated: false,
+                                                    completion: nil)
     }
     
     @objc private func refresh() {

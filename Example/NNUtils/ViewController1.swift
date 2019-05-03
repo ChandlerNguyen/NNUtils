@@ -55,5 +55,10 @@ class ViewController1: ViewController {
         
         alert.show()
     }
+    
+    @IBAction func gotoVC4(sender: Any) {
+        let vc4 = ViewController4()
+        self.navigationController?.push(viewController: vc4)
+    }
 
 }

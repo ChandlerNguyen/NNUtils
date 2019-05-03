@@ -7,33 +7,24 @@
 
 import UIKit
 
+private extension AssociatedKeys {
+    static var nnPageController = AssociatedKey<PageController>()
+}
+
 extension UIPageViewController {
-    
-    private struct AssociatedKeys {
-        static var PageController = "PageController"
-    }
     
     private var pageController: PageController? {
         get {
-            var controller = objc_getAssociatedObject(self, &AssociatedKeys.PageController) as? PageController
-            if (controller != nil) {
-                return controller
-            }
-            controller = PageController()
-            self.pageController = controller
-            return controller
-        }
-        
-        set {
-            if let newValue = newValue {
-                objc_setAssociatedObject(self,&AssociatedKeys.PageController,newValue as PageController?,.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-                pageController?.pageViewController = self
-            }
+            return AssociatedObjects.fetch(from: self, key: .nnPageController, initialValue: { () -> PageController in
+                let pageCtr = PageController()
+                pageCtr.pageViewController = self
+                return pageCtr
+            })
         }
     }
     
     public func setViewControllers(_ viewControllers: [UIViewController]) {
-        self.pageController?.viewControllers = viewControllers
+        self.pageController?.setViewControllers(viewControllers)
     }
     
     public func showViewController(_ viewController: UIViewController) {

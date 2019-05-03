@@ -8,7 +8,7 @@
 import UIKit
 import NNUtils
 
-class DemoPageViewController: UIViewController {
+class DemoPageViewController: ViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl?
     @IBOutlet weak var pageViewContainer: UIView?
@@ -16,6 +16,14 @@ class DemoPageViewController: UIViewController {
     lazy var pageViewController: UIPageViewController = {
         let pageVC = UIPageViewController(transitionStyle: UIPageViewController.TransitionStyle.scroll, navigationOrientation: UIPageViewController.NavigationOrientation.horizontal, options: nil)
         pageVC.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        pageVC.setViewControllers([ViewController1(),
+                                   ViewController2(),
+                                   ViewController3()])
+        pageVC.setDidFinishTransition { [weak self] (viewController, pageIndex) in
+            self?.segmentedControl?.selectedSegmentIndex = pageIndex
+        }
+        
         return pageVC
     }()
     
@@ -35,12 +43,7 @@ class DemoPageViewController: UIViewController {
         setupViewHierarchy()
         //setupConstraints()
         
-        pageViewController.setViewControllers([ViewController1(),
-                                               ViewController2(),
-                                               ViewController3()])
-        pageViewController.setDidFinishTransition { [weak self] (viewController, pageIndex) in
-            self?.segmentedControl?.selectedSegmentIndex = pageIndex
-        }
+        
     }
 
     private func setupViewHierarchy() {

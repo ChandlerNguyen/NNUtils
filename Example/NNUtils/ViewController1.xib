@@ -34,9 +34,18 @@
                         <action selector="showActionSheetWithSender:" destination="-1" eventType="touchUpInside" id="sWI-j3-OSL"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oux-sm-OvO">
+                    <rect key="frame" x="152" y="227" width="71" height="30"/>
+                    <state key="normal" title="Click Here"/>
+                    <connections>
+                        <action selector="gotoVC4WithSender:" destination="-1" eventType="touchUpInside" id="CvY-zC-bqx"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="oux-sm-OvO" firstAttribute="top" secondItem="XyA-2X-HdO" secondAttribute="bottom" constant="39" id="Arc-n3-no9"/>
+                <constraint firstItem="oux-sm-OvO" firstAttribute="centerX" secondItem="XyA-2X-HdO" secondAttribute="centerX" id="VuH-Qg-bMJ"/>
                 <constraint firstItem="XyA-2X-HdO" firstAttribute="top" secondItem="WIo-LU-L50" secondAttribute="bottom" constant="33" id="cud-Ij-VvS"/>
                 <constraint firstItem="WIo-LU-L50" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="fKi-ra-ejP"/>
                 <constraint firstItem="WIo-LU-L50" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qAT-ok-obV"/>

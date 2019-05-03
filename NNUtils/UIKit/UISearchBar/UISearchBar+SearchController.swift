@@ -7,31 +7,23 @@
 
 import UIKit
 
+private extension AssociatedKeys {
+    static var nnSearchController = AssociatedKey<SearchController>()
+}
+
 extension UISearchBar {
-    private struct AssociatedKeys {
-        static var SearchController = "SearchController"
-    }
     
-    public var searchController: SearchController? {
+    private var searchController: SearchController {
         get {
-            var controller = objc_getAssociatedObject(self, &AssociatedKeys.SearchController) as? SearchController
-            if (controller != nil) {
+            return AssociatedObjects.fetch(from: self, key: .nnSearchController, initialValue: { () -> SearchController in
+                let controller = SearchController()
+                controller.searchBar = self
                 return controller
-            }
-            controller = SearchController()
-            self.searchController = controller
-            return controller
-        }
-        
-        set {
-            if let newValue = newValue {
-                objc_setAssociatedObject(self,&AssociatedKeys.SearchController,newValue as SearchController?,.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-                searchController?.searchBar = self
-            }
+            })
         }
     }
     
     public func setTextDidChange(_ textDidChange: SearchBarAction?) {
-        self.searchController?.textDidChange = textDidChange
+        self.searchController.textDidChange = textDidChange
     }
 }
