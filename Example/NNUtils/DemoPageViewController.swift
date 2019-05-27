@@ -31,6 +31,8 @@ class DemoPageViewController: ViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         title = "Dem Page View Controller"
         tabBarItem = UITabBarItem(title: "Page Controller", image: #imageLiteral(resourceName: "favorite_empty_icon"), tag: 0)
+        
+        
     }
 
     required init?(coder aDecoder: NSCoder) {

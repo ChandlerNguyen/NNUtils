@@ -27,8 +27,20 @@ public extension UIView {
     }
     
     @discardableResult
+    func leadingAnchor(greaterThanOrEqualTo anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0) -> Self {
+        leadingAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
+        return self
+    }
+    
+    @discardableResult
     func trailingAnchor(equalTo anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0) -> Self {
         trailingAnchor.constraint(equalTo: anchor, constant: constant).isActive = true
+        return self
+    }
+    
+    @discardableResult
+    func trailingAnchor(greaterThanOrEqualTo anchor: NSLayoutXAxisAnchor, constant: CGFloat = 0) -> Self {
+        trailingAnchor.constraint(greaterThanOrEqualTo: anchor, constant: constant).isActive = true
         return self
     }
     
