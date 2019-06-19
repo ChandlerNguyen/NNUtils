@@ -66,6 +66,16 @@
                ReferencedContainer = "container:NNUtils.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5C2647E422A67BE7007BEBDD"
+               BuildableName = "NNUtils_ExampleTests.xctest"
+               BlueprintName = "NNUtils_ExampleTests"
+               ReferencedContainer = "container:NNUtils.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

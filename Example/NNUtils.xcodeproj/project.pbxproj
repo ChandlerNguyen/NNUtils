@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DC112365B2EE44014A2D2F2 /* Pods_NNUtils_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23C11E1BF8B79DE08D925D /* Pods_NNUtils_Example.framework */; };
+		5C2647E822A67BE7007BEBDD /* NNUtils_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2647E722A67BE7007BEBDD /* NNUtils_ExampleTests.swift */; };
 		5CBA5D2022698616000FAAB0 /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA5D1F22698616000FAAB0 /* MainWindowFactory.swift */; };
 		5CBA5D22226986D0000FAAB0 /* UIColor+DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA5D21226986D0000FAAB0 /* UIColor+DemoApp.swift */; };
 		5CBA5D2522698773000FAAB0 /* DemoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA5D2322698773000FAAB0 /* DemoPageViewController.swift */; };
@@ -20,6 +21,7 @@
 		5CBA5D362269AB2D000FAAB0 /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CBA5D342269AB2D000FAAB0 /* ViewController2.xib */; };
 		5CBA5D392269AB3B000FAAB0 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBA5D372269AB3B000FAAB0 /* ViewController3.swift */; };
 		5CBA5D3A2269AB3B000FAAB0 /* ViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CBA5D382269AB3B000FAAB0 /* ViewController3.xib */; };
+		5CC3364522A763D300AC8697 /* CollectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC3364422A763D300AC8697 /* CollectionTest.swift */; };
 		5CF5ED4422798FC200A0C469 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5ED4222798FC200A0C469 /* ViewController4.swift */; };
 		5CF5ED4522798FC200A0C469 /* ViewController4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CF5ED4322798FC200A0C469 /* ViewController4.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -28,12 +30,25 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5C2647EA22A67BE7007BEBDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = NNUtils_Example;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		331E0E2B4B59E6CFBAD47A4C /* NNUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NNUtils.podspec; path = ../NNUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3355EE464E50DC5CDCF69670 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4AF6A7907270F70F3FE3C55C /* Pods_NNUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E164BC4F77A4ED02E5081C /* Pods-NNUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNUtils_Example.release.xcconfig"; path = "Target Support Files/Pods-NNUtils_Example/Pods-NNUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		591228EBA0532F077C908787 /* Pods-NNUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNUtils_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NNUtils_Tests/Pods-NNUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2647E522A67BE7007BEBDD /* NNUtils_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNUtils_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2647E722A67BE7007BEBDD /* NNUtils_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNUtils_ExampleTests.swift; sourceTree = "<group>"; };
+		5C2647E922A67BE7007BEBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CBA5D1F22698616000FAAB0 /* MainWindowFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindowFactory.swift; path = Factories/MainWindowFactory.swift; sourceTree = "<group>"; };
 		5CBA5D21226986D0000FAAB0 /* UIColor+DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DemoApp.swift"; sourceTree = "<group>"; };
 		5CBA5D2322698773000FAAB0 /* DemoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPageViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +61,7 @@
 		5CBA5D342269AB2D000FAAB0 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		5CBA5D372269AB3B000FAAB0 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		5CBA5D382269AB3B000FAAB0 /* ViewController3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController3.xib; sourceTree = "<group>"; };
+		5CC3364422A763D300AC8697 /* CollectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTest.swift; sourceTree = "<group>"; };
 		5CF5ED4222798FC200A0C469 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		5CF5ED4322798FC200A0C469 /* ViewController4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController4.xib; sourceTree = "<group>"; };
 		5F23C11E1BF8B79DE08D925D /* Pods_NNUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C2647E222A67BE7007BEBDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +108,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5C2647E622A67BE7007BEBDD /* NNUtils_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C2647E722A67BE7007BEBDD /* NNUtils_ExampleTests.swift */,
+				5C2647E922A67BE7007BEBDD /* Info.plist */,
+			);
+			path = NNUtils_ExampleTests;
+			sourceTree = "<group>";
+		};
 		5CBA5D1E226985EA000FAAB0 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +133,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for NNUtils */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				5C2647E622A67BE7007BEBDD /* NNUtils_ExampleTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				1A6ED023C09D8C4D1B74FDE8 /* Pods */,
 				95E7D883FA5CB4D6F35CBB60 /* Frameworks */,
@@ -111,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* NNUtils_Example.app */,
+				5C2647E522A67BE7007BEBDD /* NNUtils_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +187,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				5CC3364422A763D300AC8697 /* CollectionTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -187,6 +222,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C2647E422A67BE7007BEBDD /* NNUtils_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C2647EE22A67BE7007BEBDD /* Build configuration list for PBXNativeTarget "NNUtils_ExampleTests" */;
+			buildPhases = (
+				5C2647E122A67BE7007BEBDD /* Sources */,
+				5C2647E222A67BE7007BEBDD /* Frameworks */,
+				5C2647E322A67BE7007BEBDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C2647EB22A67BE7007BEBDD /* PBXTargetDependency */,
+			);
+			name = NNUtils_ExampleTests;
+			productName = NNUtils_ExampleTests;
+			productReference = 5C2647E522A67BE7007BEBDD /* NNUtils_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		607FACCF1AFB9204008FA782 /* NNUtils_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "NNUtils_Example" */;
@@ -212,10 +265,15 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					5C2647E422A67BE7007BEBDD = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1020;
@@ -237,11 +295,19 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* NNUtils_Example */,
+				5C2647E422A67BE7007BEBDD /* NNUtils_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C2647E322A67BE7007BEBDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +369,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C2647E122A67BE7007BEBDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C2647E822A67BE7007BEBDD /* NNUtils_ExampleTests.swift in Sources */,
+				5CC3364522A763D300AC8697 /* CollectionTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +396,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C2647EB22A67BE7007BEBDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* NNUtils_Example */;
+			targetProxy = 5C2647EA22A67BE7007BEBDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -342,6 +425,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C2647EC22A67BE7007BEBDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NNUtils_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evizi.NNUtils-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNUtils_Example.app/NNUtils_Example";
+			};
+			name = Debug;
+		};
+		5C2647ED22A67BE7007BEBDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NNUtils_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evizi.NNUtils-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNUtils_Example.app/NNUtils_Example";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +612,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C2647EE22A67BE7007BEBDD /* Build configuration list for PBXNativeTarget "NNUtils_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C2647EC22A67BE7007BEBDD /* Debug */,
+				5C2647ED22A67BE7007BEBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "NNUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

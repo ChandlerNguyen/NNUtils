@@ -14,9 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = MainWindowFactory.make()
+        
+        // Test concurrent loop
+//        var array = [Int]()
+//        
+//        DispatchQueue.concurrentPerform(iterations: 1000) { index in
+//            let last = array.last ?? 0
+//            array.append(last + 1)
+//        }
+        
         return true
     }
 
